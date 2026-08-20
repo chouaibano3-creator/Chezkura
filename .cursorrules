@@ -1,0 +1,72 @@
+# Chez Kura — Project Rules for AI Assistants
+
+You are working on the storefront for **Chez Kura**, a made-to-order home decor
+brand. Read these rules before changing anything.
+
+## What the brand is about
+
+Chez Kura exists for ONE feeling: walking into a home and feeling instantly at
+peace. It is about the home first. Pets are included because a pet is part of
+what makes a house feel like home — not because this is a "pet store."
+
+## Hard rules — do not break these
+
+1. **NEVER mention AI, machine learning, generative art, or algorithms anywhere
+   a customer can see.** Not in copy, alt text, meta tags, or comments that ship.
+   Designs are described as "made only for your space", "made to order",
+   "never repeated". The production method is not the story.
+2. **Home comes first, pets come second.** In navigation, on the homepage, and in
+   collections. The pet section lives BELOW home accessories, in a visually
+   quieter treatment (smaller section, no competing hero). Present, not hidden.
+3. **Voice: warm, calm, slightly poetic. Never salesy.** Short sentences. No
+   exclamation marks. No "SHOP NOW!!!", no urgency timers, no fake scarcity.
+4. **Made-to-order items are final sale.** Any returns/policy copy must reflect
+   this. Do not write a generic 30-day-returns policy.
+5. Keep the palette. Do not introduce new brand colors.
+
+## Palette (CSS custom properties in assets/styles.css)
+
+| Role | Hex | Variable |
+|---|---|---|
+| Background / surface | `#F6F1EA` | `--bone` |
+| Secondary neutral | `#E3D5C3` | `--sand` |
+| Primary accent (Home) | `#C17A56` | `--terracotta` |
+| Secondary accent (Pets) | `#93A084` | `--sage` |
+| Ink / text | `#2B2723` | `--charcoal` |
+
+Home sections use terracotta accents. Pet sections use sage accents. This is how
+the two collections stay visually distinct inside one brand.
+
+## Typography
+
+- Headings + wordmark: geometric sans (Futura / Poppins / Neue Montreal).
+  Wide letter-spacing on the wordmark and eyebrow labels only.
+- Body: humanist sans (Inter / Work Sans).
+
+## Products and prices (source of truth: shopify/products.csv)
+
+Home Accessories:
+- Cushion covers 18x18 — $49.99
+- Wall art, small canvas 16x16 — $69.99
+- Wall art, large canvas 24x36 — $129.99
+- Rugs / accent mats — $59.99
+
+Pets (require a customer photo upload; longer lead time):
+- Pet portrait canvas 16x16 — $79.99
+- Pet name blanket 50x60 — $89.99
+- Pet photo mat — $59.99
+
+Bundles:
+- The Pair (2 cushions, 15% off) — $84.98
+- Complete the Room (cushion + rug, 12% off) — $96.78
+- For You and Them (home piece + pet portrait, 12% off) — $114.38
+
+Free shipping over $90.
+
+## Tech notes
+
+- Static HTML/CSS. No build step, no framework, no dependencies.
+- This prototype is the visual reference for a Shopify theme. When porting to
+  Shopify, translate sections into theme sections/blocks; keep the same order.
+- Product images are currently CSS gradient placeholders (`.t1`–`.t6`). Replace
+  them with real Printful mockups when artwork exists.

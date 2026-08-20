@@ -249,10 +249,29 @@
       "</div>";
   }
 
+  function gentleReveal() {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (!("IntersectionObserver" in window)) return;
+    var targets = qsa(".sec-head, .card, .bundle, .promise-grid > div, .about-copy, .about-media, .hero-media");
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-in");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    targets.forEach(function (el) {
+      el.classList.add("reveal");
+      io.observe(el);
+    });
+  }
+
   function bind() {
     injectChrome();
     renderCart();
     renderProductPage();
+    gentleReveal();
 
     document.addEventListener("click", function (e) {
       var t = e.target.closest("[data-open-cart], [data-open-search], [data-open-menu], [data-close-ui], [data-backdrop], [data-add-product], [data-add-bundle], [data-qty], [data-remove], [data-pdp-delta], [data-checkout]");

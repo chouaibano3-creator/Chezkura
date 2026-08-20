@@ -20,18 +20,25 @@ python3 -m http.server 8000
 ## What's in here
 
 ```
-chez-kura/
-├── index.html              # the storefront (single page)
-├── assets/styles.css       # all styling, brand palette as CSS variables
+├── index.html              # homepage
+├── product.html            # product page (opens with ?id=)
+├── shipping.html
+├── returns.html
+├── contact.html
+├── assets/
+│   ├── styles.css
+│   ├── catalog.js          # products, prices, copy
+│   ├── site.js             # cart, search, mobile nav
+│   └── images/             # prototype artwork (replace with Printful mockups)
 ├── .cursorrules            # project rules — read this first
 ├── brand/
-│   ├── brand-guide.md      # palette, type, voice, positioning
-│   └── brand-board.png     # visual brand board
+│   ├── brand-guide.md
+│   └── brand-board.png
 ├── content/
-│   └── copy.md             # every line of site copy, section by section
+│   └── copy.md
 └── shopify/
     ├── products.csv        # 11 products, ready to import into Shopify
-    └── import-guide.md     # how to import + set up the store
+    └── import-guide.md
 ```
 
 ---
@@ -70,7 +77,9 @@ is both the product promise and the reason returns are final sale.
 | Homepage design + copy | Done |
 | Product catalog + pricing + margins | Done |
 | Shopify product CSV | Done — ready to import |
-| Product artwork | **Not started** — needs image generation + Printful mockups |
+| Prototype artwork | Done — 11 designs in the brand palette |
+| Product pages, cart, search, policies | Done — static prototype only |
+| Printful mockups on real products | **Not started** |
 | Shopify store | **Not created** — needs account + domain |
 | Ads / content strategy | **Not started** |
 
@@ -81,8 +90,8 @@ is both the product promise and the reason returns are final sale.
 3. Buy `chezkurahome.com` **inside Shopify** so it auto-connects (no DNS work).
 4. Install Printful from the Shopify App Store — it handles production and
    shipping; no inventory is ever held.
-5. Generate the artwork (8+ designs in the brand palette), run them through
-   Printful's mockup generator, and replace the placeholder tiles.
+5. Run the prototype artwork through Printful's mockup generator and replace
+   the tiles in `assets/images/` with photographed products.
 6. Import `shopify/products.csv`, attach the mockups, publish.
 7. Add a file-upload product option for the pet collection (customers submit
    their pet's photo at checkout).

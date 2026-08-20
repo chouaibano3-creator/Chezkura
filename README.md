@@ -8,7 +8,14 @@ portrait collection.
 
 ---
 
-## Run it
+## Live site
+
+https://chouaibano3-creator.github.io/Chezkura/
+
+Enable it once in GitHub: **Settings → Pages → Source: GitHub Actions**.
+The workflow in `.github/workflows/pages.yml` publishes the storefront.
+
+## Run it locally
 
 No build step. No dependencies. Open `index.html` in a browser, or serve it:
 

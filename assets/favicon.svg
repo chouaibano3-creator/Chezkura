@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Chez Kura">
+  <rect width="64" height="64" fill="#F6F1EA"/>
+  <path d="M12 50V32a20 20 0 0 1 40 0v18" fill="none" stroke="#C17A56" stroke-width="5" stroke-linecap="round"/>
+</svg>

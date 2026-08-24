@@ -10,9 +10,9 @@ téléphone.
 
 1. Installe l'app Instagram, crée un compte avec le **Gmail business**
    (pas ton adresse perso — voir `shopify/import-guide.md`).
-2. Nom d'utilisateur : **@chezkurahome** — jamais « kura » seul
+2. Nom d'utilisateur : **@chez.kura** — jamais « kura » seul
    (collision avec la gamme KURA d'IKEA, règle de la charte).
-   - Si pris : `@chezkura.home`, `@chezkurahome.co`
+   - Si pris : `@chezkura.home`, `@chez.kura.co`
 3. Passe le compte en **compte professionnel** (Réglages → Compte →
    Passer à un compte professionnel → Commerce). C'est gratuit et ça
    débloque les statistiques et, plus tard, Instagram Shopping relié à

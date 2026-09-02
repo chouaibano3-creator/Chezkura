@@ -374,6 +374,18 @@
   }
   .contact-form .btn{align-self:flex-start;border:0;cursor:pointer;}
 
+  /* ---------- Instagram ---------- */
+  .insta{background:var(--bone);}
+  .insta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  @media(max-width:760px){ .insta-grid{grid-template-columns:repeat(2,1fr);} }
+  .insta-grid a{display:block;overflow:hidden;border-radius:var(--radius);border:1px solid var(--hairline);}
+  .insta-grid img{
+    width:100%;aspect-ratio:1/1;object-fit:cover;display:block;
+    transition:transform .35s ease;
+  }
+  .insta-grid a:hover img{transform:scale(1.04);}
+  .insta-btn{margin-top:26px;}
+
   /* ---------- Gentle reveal ---------- */
   .reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease;}
   .reveal.is-in{opacity:1;transform:none;}

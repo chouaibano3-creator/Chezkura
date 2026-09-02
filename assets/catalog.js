@@ -183,9 +183,9 @@ CK.products = [
     size: "Accent",
     image: "assets/images/pet-mat.jpg",
     badge: null,
-    cardDesc: "A soft place by the bowl, made just for them.",
-    lead: "A soft place by the bowl, made just for them.",
-    body: "Send us a photo after checkout and we'll take care of the rest.",
+    cardDesc: "A plush landing by the bowl, in a warm clay pile.",
+    lead: "A plush landing by the bowl, in a warm clay pile.",
+    body: "A soft place by the bowl, made just for them. Send us a photo after checkout and we'll take care of the rest.",
     bullets: [
       "Accent size",
       "Non-slip backing",

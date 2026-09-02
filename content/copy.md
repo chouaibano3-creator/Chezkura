@@ -100,7 +100,7 @@ keep the voice rules in `brand/brand-guide.md`.
 |---|---|
 | Pet Portrait Canvas | Upload a photo — we turn it into a piece made only for your home. |
 | Pet Name Blanket | Their name, their colours, the warmest corner of the couch. |
-| Pet Photo Mat | A soft place by the bowl, made just for them. |
+| Pet Photo Mat | A plush landing by the bowl, in a warm clay pile. |
 
 **Lead-time note:**
 > Portraits are made by hand from the photo you send, so they take a few days
